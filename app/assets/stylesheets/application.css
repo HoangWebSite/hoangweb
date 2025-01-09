@@ -8,3 +8,386 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    color: #333;
+  }
+  
+  h1 {
+    margin-bottom: 1rem;
+    color: #444;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-product-btn {
+    background: linear-gradient(45deg, #ff8a65, #ff5722);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .new-product-btn:hover {
+    background: linear-gradient(45deg, #ff7043, #e64a19);
+    transform: translateY(-2px);
+  }
+  
+  .new-product-btn:active {
+    background: linear-gradient(45deg, #d84315, #bf360c);
+    transform: translateY(0);
+  }
+  
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  #products div {
+    background: linear-gradient(45deg, #ffffff, #f3e5f5);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #products div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #e1bee7, #ce93d8);
+  }
+  
+  #products div .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #673ab7;
+    transition: color 0.3s ease;
+  }
+  
+  #products div:hover .icon {
+    color: #512da8;
+  }
+  
+  #products div a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  #products div a:hover {
+    color: #007bff;
+  }
+  
+  footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #777;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    color: #333;
+  }
+  
+  .product-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-title {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  
+  .product-image img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-back {
+    background-color: #6c757d;
+  }
+  
+  .btn-back:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-edit {
+    background-color: #ffc107;
+  }
+  
+  .btn-edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+    color: #333;
+  }
+  
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  form input,
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input:focus,
+  form textarea:focus,
+  form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  form .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-cancel {
+    background-color: #6c757d;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn:active {
+    transform: translateY(2px);
+  }
+  
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  /* Sử dụng lại form-container và các nút từ phần trước */
+
+/* Tiêu đề form */
+.form-title {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #42a5f5, #64b5f6);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cập nhật nút Cancel */
+  .btn-cancel {
+    background-color: #f44336;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #e53935;
+  }
+  
+  /* Form container */
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Form labels */
+  .form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Form inputs */
+  .form-input,
+  .form-textarea,
+  .form-input-file {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus,
+  .form-input-file:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  /* Form textarea */
+  .form-textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Submit button */
+  .btn-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #4caf50, #66bb6a);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-submit:hover {
+    background: linear-gradient(45deg, #388e3c, #43a047);
+  }
+  
+  .btn-submit:active {
+    transform: translateY(2px);
+  }
+  

@@ -1,11 +1,16 @@
 <h1>Products</h1>
 
-<%= link_to "New product", new_product_path %>
+<%= link_to "New Product", new_product_path, class: "new-product-btn" %>
 
 <div id="products">
   <% @products.each do |product| %>
     <div>
+      <i class="icon fa fa-box"></i>
       <%= link_to product.name, product %>
     </div>
   <% end %>
 </div>
+
+<footer>
+  <p>Made with ❤️ by Your Company</p>
+</footer>
